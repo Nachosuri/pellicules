@@ -1,0 +1,124 @@
+* {
+	font-family:'Roboto', sans-serif;
+  }
+  
+	html{
+	  overflow-y:scroll;
+	}
+
+	
+	header{
+	position:relative;
+	height: 150px;
+	z-index:1000;
+	}
+	
+	h2 {
+	font-size:36px;
+	text-align:center;
+	font-family:'Pacifico', cursive;
+	font-style:italic;
+	}
+	
+	h2::first-letter {
+	color:red;
+	font-family:'Cinzel Decorative', cursive;
+	font-size:84px;
+	}
+	
+	#preloader{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:fixed;
+	inset:0 0 0 0;
+	background-color:#FFB6C1;
+	z-index:999;	
+	}
+	
+	#preloader img{
+	width:40%;	
+	}
+	.out{
+	display:none!important;
+	}
+	
+	
+	h3 {
+	font-size:24px;
+	text-align:center;
+	}
+	
+	h3::first-letter {
+	color:red;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size:28px;
+	}
+	
+	.h3 model{
+	text-align:center;
+	margin-left:0%;	
+	}
+	
+	body {
+	background-color:#FFB6C1;
+	}
+	
+	#movies {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:flex-start;			
+	}
+	
+	.movies {
+		display:block;
+		width:20%;
+		background-color:#FFE4B5;
+		margin:1%;
+		padding:1%;
+		border:solid 4px red;
+		
+	}
+	.movies img  {
+		width: 90%;
+		margin:1%;
+		padding:1%;
+		border:solid 1px red;
+	}
+	
+	.stars img  {
+		width: 5%;
+		border:solid 1px red;
+		margin-left:10%;
+		padding:1%;
+		text-align:center;
+	}
+	
+	p { 
+	font-weight:bold;
+	font-size:22px;
+	text-align:center;
+	}
+	
+	.movies p {
+		margin:0,2%;	
+	}
+
+	
+	.infolink{
+	color:red;
+	font-weight:bold;
+	font-size:18px;
+	padding-left:25%;
+	text-transform: uppercase;
+	cursor:pointer;
+	text-align:center;
+	}
+	
+	.infolink:hover {
+	background:white;
+	}
+	
+	.infolink:active {
+	background:#FFFF00;
+	}
