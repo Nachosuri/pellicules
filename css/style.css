@@ -9,21 +9,103 @@
 	
 	header{
 	position:relative;
-	height: 150px;
 	z-index:1000;
 	}
 	
+	.slider-brief {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	display:flex;
+	justify-content:center;
+	align-items:left-side;	
+	}
+	
+	#slider-pic1 {
+	position:relative;
+	color:red;
+	text-shadow:4px 4px 4px #000000;
+	margin-top:225px; 
+	margin-right:220px; 
+	text-decoration:none;
+	}
+	
+	#slider-pic1::first-letter {
+	color:#000000;
+	font-family:'Cinzel Decorative', cursive;
+	font-weight:bold;
+	text-shadow: 4px 4px red;
+	font-size:154px;
+	}
+	
+
+	
+	#slider-pic2 {
+	position:relative;
+	width:90%;
+	color:red;
+	text-shadow: 4px 4px 4px #000000;
+	text-align:center;
+	margin-top:225px; 
+	text-decoration:none;	
+	}
+	
+	#slider-pic2::first-letter {
+	color:#000000;
+	font-family:'Cinzel Decorative', cursive;
+	font-weight:bold;
+	text-shadow: 4px 4px red;
+	font-size:154px;
+	}
+	
+	#slider-pic3 {
+	position:relative;
+	width:100%;
+	color:red;
+	text-shadow:4px 4px 4px #000000;
+	text-align:right;
+	margin-top:15px; 
+	text-decoration:none;	
+	}
+	
+	#slider-pic3::first-letter {
+	color:#000000;
+	font-family:'Cinzel Decorative', cursive;
+	font-weight:bold;
+	text-shadow: 4px 4px red;
+	font-size:154px;
+	}
+	
+
+	.slider{
+	width:100%;
+	border:2px solid red;
+	background-color:#0000CD;
+	border-radius:4px;	
+	}
+	
+	#slider-pic1, #slider-pic2, #slider-pic3 {
+	font-size:124px;
+	text-align:center;
+	font-family:'Pacifico', cursive;
+	font-style:italic;		
+	}
+	
+
 	h2 {
 	font-size:36px;
 	text-align:center;
 	font-family:'Pacifico', cursive;
 	font-style:italic;
+	color:red;
 	}
 	
 	h2::first-letter {
-	color:red;
-	font-family:'Cinzel Decorative', cursive;
-	font-size:84px;
+	color:white;
+	font-family:'Pacifico', cursive;
+	font-size:54px;
 	}
 	
 	#preloader{
@@ -51,13 +133,22 @@
 	
 	h3::first-letter {
 	color:red;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Pacifico', cursive;
 	font-size:28px;
 	}
 	
 	.h3 model{
 	text-align:center;
 	margin-left:0%;	
+	}
+	
+	#motto {
+	font-weight:bold;
+	text-align:center;
+	font-size:28px;
+	text-align:center;
+	font-family:'Pacifico', cursive;
+	font-style:italic;	
 	}
 	
 	body {
@@ -101,8 +192,10 @@
 	}
 	
 	.movies p {
-		margin:0,2%;	
+	margin:0,2%;	
 	}
+	
+	
 
 	
 	.infolink{
@@ -122,3 +215,82 @@
 	.infolink:active {
 	background:#FFFF00;
 	}
+	
+	@media(max-width:850px){
+	 .movies, h2, h3{
+		width:90%;
+		font-size:34px;
+		padding:1%;
+		margin:1%;
+		text-align:center;
+	}		
+	}
+	
+	@media screen and (max-width:220px),(max-device-width:980px){
+			
+	.movies,h2, h3{
+		width:65%;
+		font-size:34px;
+		text-align:center;
+	}	
+	}
+	
+@media(max-width:1050px){
+	#slider-pic1, #slider-pic2, #slider-pic3{
+		width:100%;
+		font-size:44px;
+		padding:1%;
+		margin:1%;
+		text-align:center;
+	}		
+	}
+	
+	@media(max-width:1050px){
+	#slider-pic1::first-letter {
+	color:red;
+	font-family:'Cinzel Decorative', cursive;
+	font-weight:bold;
+	text-shadow: 4px 4px black;
+	font-size:48px;
+	}
+	}
+
+@media(max-width:1050px){
+	#slider-pic2::first-letter {
+	color:red;
+	font-family:'Cinzel Decorative', cursive;
+	font-weight:bold;
+	text-shadow: 4px 4px black;
+	font-size:48px;
+	}
+	}
+	
+	
+	@media(max-width:1050px){
+	#slider-pic3::first-letter {
+	color:red;
+	font-family:'Cinzel Decorative', cursive;
+	font-weight:bold;
+	text-shadow: 4px 4px black;
+	font-size:48px;
+	}
+	}
+	
+@media screen and (max-width:220px),(max-device-width:980px){
+			
+	#slider-pic1, #slider-pic2, #slider-pic3 {
+		width:60%;
+		font-size:44px;
+		text-align:top;
+		
+	}	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	

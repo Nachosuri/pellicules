@@ -13,6 +13,9 @@
 
 	<!-- Enllaç a l'arxiu CSS Extern -->
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	
+	<!-- Enllaç a l'arxiu CSS SPLIDER -->
+	<link rel="stylesheet" href="css/splide.min.css" type="text/css"/>
 
 	<!-- Enllaç a Jquery Extern 
 	<script  type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
@@ -20,7 +23,10 @@
 
 	<!-- Enllaç a Javascript Extern -->
 	<script type="text/javascript" src="js/javascript.js"></script>
-
+	
+	<!-- Enllaç a Javascript SPLIDER -->
+	<script  type="text/javascript" src="js/splide.min.js"></script>
+	
 	<!-- favicon -->
 	<link href="img/icons/favicon.png" rel="icon" type="image/png" />
 
@@ -28,14 +34,40 @@
 	<title>Fletnix</title>
 </head>
 <body>
-	<header> <h2>FLETNIX Movies on demand</h2> </header>
-	<div id="preloader"> <img src="img/preloader.gif"></div>
+
+
+	<header>  
+	
+	<section class="splide" data-splide='{"type":"loop","perPage":1,"autoplay":true, "interval":4000}' aria-label="Splide Basic HTML Example">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide"> <img class="slider"  src='img/slider/slider01.png' alt="slide tigre">
+					<div class="slider-brief"><a id="slider-pic1" href=https://www.youtube.com/watch?v=Fo6TfHkLW6Y >Streaming &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now</a></div></li>
+					<li class="splide__slide"><img class="slider"  src='img/slider/slider02.png' alt="slide elephant">
+					<div class="slider-brief"><a id="slider-pic2" href=https://www.youtube.com/watch?v=htzPR7W5ksI > Coming Soon</p></div></li>
+					<li class="splide__slide"><img class="slider"  src='img/slider/slider03.png' alt="slide gorila">
+					<div class="slider-brief"><a id="slider-pic3" href=https://www.youtube.com/watch?v=SkmRT3M4Vx4> New arrival </a></div></li> 
+					
+				</ul>
+			</div>
+		
+	</section>
+	</header>
+	
+	<h2>FLETNIX</h2>
+	<p id="motto">Movies on demand</p>
+	
+	<div id="preloader"><img src="img/preloader.gif"></div>
 	
 		<section id="movies">
-	
+		
 			
 		</section>
+		
+		
 	
 	<footer></footer>
 </body>
 </html>
+
+
