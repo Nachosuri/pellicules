@@ -6,11 +6,47 @@
 	  overflow-y:scroll;
 	}
 
-	
+
 	header{
 	position:relative;
 	z-index:1000;
 	}
+	
+	#preloader{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:fixed;
+	inset:0 0 0 0;
+	background-color:#3B3F75;
+	z-index:999;
+	}
+	
+	#preloader img{
+	width:20%;
+	margin-top:350px;		
+	}
+	.out{
+	display:none!important;
+	}
+	
+	.button{
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+	  
+	  a {
+		  
+		  text-decoration: none;
+	  }
 	
 	.slider-brief {
 	position:absolute;
@@ -20,24 +56,27 @@
 	right:0;
 	display:flex;
 	justify-content:center;
-	align-items:left-side;	
+	align-items:center;		
 	}
 	
+
 	#slider-pic1 {
 	position:relative;
-	color:red;
-	text-shadow:4px 4px 4px #000000;
+	color:#FB8573;
+	text-shadow:4px 4px 4px white;
 	margin-top:225px; 
 	margin-right:220px; 
 	text-decoration:none;
+		
 	}
 	
 	#slider-pic1::first-letter {
-	color:#000000;
+	color:white;
 	font-family:'Cinzel Decorative', cursive;
 	font-weight:bold;
-	text-shadow: 4px 4px red;
+	text-shadow: 4px 4px #FB8573;
 	font-size:154px;
+	
 	}
 	
 
@@ -45,44 +84,48 @@
 	#slider-pic2 {
 	position:relative;
 	width:90%;
-	color:red;
-	text-shadow: 4px 4px 4px #000000;
+	color:#FB8573;
+	text-shadow: 4px 4px 4px white;
 	text-align:center;
 	margin-top:225px; 
-	text-decoration:none;	
+	text-decoration:none;
+			
 	}
 	
 	#slider-pic2::first-letter {
-	color:#000000;
+	color:white;
 	font-family:'Cinzel Decorative', cursive;
 	font-weight:bold;
-	text-shadow: 4px 4px red;
+	text-shadow: 4px 4px #FB8573;
 	font-size:154px;
+		
 	}
 	
 	#slider-pic3 {
 	position:relative;
 	width:100%;
-	color:red;
-	text-shadow:4px 4px 4px #000000;
+	color:#FB8573;
+	text-shadow:4px 4px 4px white;
 	text-align:right;
 	margin-top:15px; 
-	text-decoration:none;	
+	text-decoration:none;
+			
 	}
 	
 	#slider-pic3::first-letter {
-	color:#000000;
+	color:white;
 	font-family:'Cinzel Decorative', cursive;
 	font-weight:bold;
-	text-shadow: 4px 4px red;
+	text-shadow: 4px 4px #FB8573;
 	font-size:154px;
+	
 	}
 	
 
 	.slider{
 	width:100%;
-	border:2px solid red;
-	background-color:#0000CD;
+	height:550px;
+	
 	border-radius:4px;	
 	}
 	
@@ -95,44 +138,29 @@
 	
 
 	h2 {
-	font-size:36px;
+	font-size:66px;
 	text-align:center;
 	font-family:'Pacifico', cursive;
 	font-style:italic;
-	color:red;
+	color:#FB8573;
 	}
 	
 	h2::first-letter {
 	color:white;
 	font-family:'Pacifico', cursive;
-	font-size:54px;
+	font-size:74px;
 	}
 	
-	#preloader{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	position:fixed;
-	inset:0 0 0 0;
-	background-color:#FFB6C1;
-	z-index:999;	
-	}
-	
-	#preloader img{
-	width:40%;	
-	}
-	.out{
-	display:none!important;
-	}
-	
-	
+
 	h3 {
 	font-size:24px;
 	text-align:center;
+	background-color: black;
+	color:White;
 	}
 	
 	h3::first-letter {
-	color:red;
+	color:#FB8573;
 	font-family: 'Pacifico', cursive;
 	font-size:28px;
 	}
@@ -146,13 +174,13 @@
 	font-weight:bold;
 	text-align:center;
 	font-size:28px;
-	text-align:center;
+	color:white;
 	font-family:'Pacifico', cursive;
 	font-style:italic;	
 	}
 	
 	body {
-	background-color:#FFB6C1;
+	background-color:#3B3F75;
 	}
 	
 	#movies {
@@ -164,23 +192,22 @@
 	.movies {
 		display:block;
 		width:20%;
-		background-color:#FFE4B5;
+		background-color:#F8F6E3;
 		margin:1%;
 		padding:1%;
-		border:solid 4px red;
+		border:solid 4px #FB8573;
 		
 	}
 	.movies img  {
 		width: 90%;
 		margin:1%;
 		padding:1%;
-		border:solid 1px red;
+		
 	}
 	
 	.stars img  {
 		width: 5%;
-		border:solid 1px red;
-		margin-left:10%;
+		margin-left:10px;
 		padding:1%;
 		text-align:center;
 	}
@@ -195,26 +222,25 @@
 	margin:0,2%;	
 	}
 	
-	
 
-	
-	.infolink{
-	color:red;
+	.infolink {
+	color:#FB8573;
 	font-weight:bold;
-	font-size:18px;
-	padding-left:25%;
-	text-transform: uppercase;
+	text-transform:uppercase;
 	cursor:pointer;
 	text-align:center;
+	
 	}
 	
-	.infolink:hover {
-	background:white;
+	.infolink img{
+	width:10%;
+	text-align:center;
+	margin-left:40%;
 	}
 	
-	.infolink:active {
-	background:#FFFF00;
-	}
+	
+
+
 	
 	@media(max-width:850px){
 	 .movies, h2, h3{

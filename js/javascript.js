@@ -38,9 +38,9 @@ $.getJSON("php/pellicules_list.php",function(fletnix) {
 			"<p class=director>"+fletnix[n]["director"]+"</p>"+
 			"<p>"+fletnix[n]["pais"]+" "+"<p>"+
 			"<p>"+fletnix[n]["any"]+"</p>"+
-			"<a href=https://molokoserver.com/rebost/cecot/video.mp4><img src=img/covers/"+fletnix[n]["image"]+".jpg alt='movie on demmand'><a>"+
+			"<a href='streaming video.html'><img src=img/covers/"+fletnix[n]["image"]+".jpg alt='movie on demmand'><a>"+
 			"<div class=stars>"+score+"</div>"+"<br>"+"<br>"+"<br>"+"<br>"+
-			"<a class='infolink' href='https://www.google.com/search?q="+fletnix[n]['titol']+" "+fletnix[n]['director']+"' target=_blank>Més Informació</a>"+"</p>";
+			"<a class='infolink' href='https://www.google.com/search?q="+fletnix[n]['titol']+" "+fletnix[n]['director']+"' target=_blank><img src=img/icons/google.png></a>"+"</p>";
 		"</div>";
 	}
 	

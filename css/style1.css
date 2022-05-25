@@ -1,0 +1,39 @@
+
+* {
+	font-family: 'Metal Mania', cursive;
+  }
+
+
+
+video {
+	width:750px;
+	height:700px; 
+	align-items:center;	
+	margin:1%;
+	padding:2%;
+	border:solid 8px #FB8573;
+}
+
+
+
+h3 {
+	
+	font-weight:bold;
+	text-align:center;
+	font-size:30px;
+	color:white;
+	font-family:'Pacifico', cursive;
+	font-style:italic;	
+}
+
+h3::first-letter {
+	font-weight:bold;
+	color:#FB8573;
+	font-family: 'Pacifico', cursive;
+	font-size:38px;
+	}
+
+body {
+	background-color:#3B3F75;
+	}
+ 
