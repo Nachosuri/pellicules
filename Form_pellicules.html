@@ -40,7 +40,6 @@
 	}
 	
 	
-	
 	input[type="text"], input[type="password"] {
 	width: 550px;
 	padding: 5px 15px;
@@ -88,7 +87,7 @@
 	background: #d3f4ff;
 	}
 	
-	div {
+	#main {
 	background-color:#F8F6E3;
 	margin:1%;
 	padding:1%;
@@ -97,43 +96,61 @@
 	}
 	
 	#cover  {position: relative; width: 200px; height: 50px; margin-top: 20px; margin-right:120px;}
-	#cover::after {content: 'Puja el teu cover'; width:auto; background-color: #3B3F75; color:white; position: absolute; inset: 0 0 0 0; font-size:16px; font-weight: 700; display: flex; justify-content: center; align-items: center; line-height: 8; border-radius: 4px;}
+	#cover::after {content: 'PUJA EL TEU COVER'; width:auto; background-color: #3B3F75; color:white; position: absolute; inset: 0 0 0 0; font-size:16px; font-weight: 700; display: flex; justify-content: center; align-items: center; line-height: 8; border-radius: 4px;}
 	#cover:hover::after {background-color: #FB8573; color: #520505; cursor: pointer;}
 
 	
 	</style>
+	
+	
+	
 </head>
 <body>
 	<header></header>
 	<section>
-	<div>
+	<div id="main">
 			<h2>Formulari pelicules noves</h2>
 			
-		<form action="pelicules_add.php" method="POST" enctype="multipart/form-data">
+		<form action="php/pellicules_add.php" method="POST" enctype="multipart/form-data">
 		<label for="titol">Titol</label>
-		<input id="titol" type="text" name="titol" placeholder="Titol" required><br>
+		<input id="titol" type="text" name="titol" placeholder="Titol" onblur="valida_titol();"><br>
+		 <br>
+		<div class="error" id="message_titol"></div>
+		
 		<label for="director">Director</label>
-		<input id="director" type="text" name="director" placeholder="director" required> 
+		<input id="director" type="text" name="director" placeholder="director" onblur="valida_director();" >
+		<div class="error" id="message_director"></div>		
 		<br>
 		<label for="pais">Pais</label>
-		<input id="pais" type="text" name="pais"  required> 
+		<input id="pais" type="text" name="pais"  onblur="valida_pais();" > 
+
+		<div class="error" id="message_pais"></div>	
 		<br> 
 		<label for="Any">Any(1800-2999):</label>
-		<input type="number" id="Any" name="Any"
-		min="1800" max="2999">	<br>
+		<input type="number" id="any" name="any"
+		min="1800" max="2999" onblur="valida_any();" >
+		<div class="error" id="message_any"></div>	
+		<br>
 		<label for="genere">Animacio:</label>
-		<input type="radio" id="Si" name="genere" value="Si" required>
+		<input type="radio" id="Si" name="animacio" value="Si" >
 		Si
-		<input type="radio" id="No" name="genere" value="No" required>
-		No<br> 
-		<label for="puntuacio">Puntua (1-10):</label>
+		<input type="radio" id="No" name="animacio" value="No" >
+		No<br><br> 
+		
+		<label for="puntuacio">Puntua(0-10):</label>
 		<input type="number" id="puntuacio" name="puntuacio"
-		min="1" max="10"><br>		
-		<label for="nom">Observacions:</label><br>
-		<textarea id="comentaris" name="comentaris" rows="5" cols="35" placeholder="Expliqui aqui,tant detalladament com pugui el seu problema "></textarea>
+		min="0" max="10" onblur="valida_puntuacio();"><br><br>
+		<div class="error" id="message_puntuacio"></div>	
+		<label for="idioma">CATALÀ:</label>
+		<input type="radio" id="Si" name="catala" value="Si" required>
+		Si
+		<input type="radio" id="No" name="catala" value="No" required>
+		No<br><br>
+		<label for="nom">Observacions:</label><br><br>
+		<textarea id="comentaris" name="observacions" rows="5" cols="35" placeholder="No et tallis i digue'ns tot el que et sembli "></textarea>
 		<br>
 		<label for="cover"></label>
-		<input id="cover" type="file" name="cover" accept="image/png";"image/jpg","image/jpeg"> 
+		<input id="cover" type="file" name="imatge" accept="image/png";"image/jpg","image/jpeg"> 
 		<br>
 		<input type="checkbox" id="accept" name="accept" value="OK" required>
 		<label for="accept">Accepto els termes*</label><br><br> 
@@ -145,4 +162,7 @@
 	</section>
 	<footer></footer>
 </body>
+
+<!-- Enllaç a Javascript Extern -->
+	<script type="text/javascript" src="js/javascriptform.js"></script>
 </html>

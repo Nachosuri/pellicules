@@ -36,11 +36,12 @@ $.getJSON("php/pellicules_list.php",function(fletnix) {
 		"<div class=movies>"+
 			"<h3 class=titol>"+fletnix[n]["titol"]+"</h3>"+
 			"<p class=director>"+fletnix[n]["director"]+"</p>"+
-			"<p>"+fletnix[n]["pais"]+" "+"<p>"+
+			"<p>"+fletnix[n]["pais"]+" "+"</p>"+
 			"<p>"+fletnix[n]["any"]+"</p>"+
-			"<a href='streaming video.html'><img src=img/covers/"+fletnix[n]["image"]+".jpg alt='movie on demmand'><a>"+
+			"<a href='streaming video.html'><img id='cover' src=img/covers/"+fletnix[n]["image"]+".jpg alt='movie on demmand'></a>"+
 			"<div class=stars>"+score+"</div>"+"<br>"+"<br>"+"<br>"+"<br>"+
-			"<a class='infolink' href='https://www.google.com/search?q="+fletnix[n]['titol']+" "+fletnix[n]['director']+"' target=_blank><img src=img/icons/google.png></a>"+"</p>";
+			"<a class='delete' href='php/pellicules_delet.php?id="+fletnix[n]['id']+"'><img src='img/icons/delete.png'></a>"+
+			"<a class='infolink' href='https://www.google.com/search?q="+fletnix[n]['titol']+" "+fletnix[n]['director']+"' target=_blank><img src=img/icons/google.png></a>"+
 		"</div>";
 	}
 	
